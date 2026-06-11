@@ -19,7 +19,7 @@ def create_admin():
             email="admin@gmail.com",
             password="harshu14"
         )
-
+create_admin()
 def register(request):
     if request.method == "POST":
         uname = request.POST.get("username")
@@ -80,6 +80,7 @@ def signin(request):
 
 @login_required
 def complaintreg(request):
+    create_admin()
 
     # 🔥 Department → Classes Mapping
     dept_classes = {
