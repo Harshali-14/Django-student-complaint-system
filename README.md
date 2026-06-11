@@ -1,62 +1,73 @@
-# Complaint Management System
+# ResolveX – Complaint Management System
 
-A web-based **Complaint Management System** developed using **Django** and **MySQL** that enables users to submit, manage, and track complaints efficiently through a secure and user-friendly platform.
+A web-based **Complaint Management System** developed using **Django** and **MySQL** that enables users to submit, manage, and track complaints through a secure and structured platform.
 
-The system provides role-based access for users and administrators, ensuring smooth complaint handling, status monitoring, and effective resolution management.
+The system provides role-based access for users and administrators, ensuring efficient complaint handling, status tracking, and resolution management.
+
+---
+
+## Live Demo
+
+https://resolvex-x1ka.onrender.com/
 
 ---
 
 ## Features
 
 ### User Authentication
-- User Registration
-- User Login & Logout
-- Secure Authentication System
-- Profile Management
+
+* User registration
+* Secure login and logout
+* Profile management
 
 ### Complaint Management
-- Submit New Complaints
-- View Complaint Details
-- Update Complaint Information
-- Delete Complaints
-- Manage Complaint Records
+
+* Submit new complaints
+* View complaint details
+* Update complaints
+* Delete complaints
+* Manage complaint records
 
 ### Complaint Status Tracking
-- Pending Status
-- In Progress Status
-- Resolved Status
-- Real-Time Status Updates
+
+* Pending
+* In Progress
+* Resolved
+* Real-time status updates
 
 ### Admin Dashboard
-- Manage User Complaints
-- Update Complaint Status
-- Monitor Complaint Activities
-- View Complaint Statistics
-- Complaint Overview Dashboard
+
+* Manage user complaints
+* Update complaint status
+* Monitor all complaints
+* View complaint statistics
+* Complaint overview dashboard
 
 ### Search and Filtering
-- Search Complaints by Keywords
-- Filter Complaints by Status
-- Quick Access to Complaint Records
 
-### Responsive User Interface
-- Clean and Modern Design
-- Mobile-Friendly Layout
-- Responsive Across Devices
+* Search complaints by keywords
+* Filter by status
+* Quick access to records
+
+### Responsive Interface
+
+* Clean and modern UI
+* Mobile-friendly design
+* Fully responsive layout
 
 ---
 
 ## Technology Stack
 
-| Technology | Purpose |
-|------------|----------|
-| Python | Backend Programming |
-| Django | Web Framework |
-| MySQL | Database Management |
-| HTML5 | Frontend Structure |
-| CSS3 | Styling |
-| Bootstrap | Responsive Design |
-| JavaScript | Client-Side Functionality |
+| Technology | Purpose                   |
+| ---------- | ------------------------- |
+| Python     | Backend development       |
+| Django     | Web framework             |
+| MySQL      | Database management       |
+| HTML5      | Frontend structure        |
+| CSS3       | Styling                   |
+| Bootstrap  | Responsive design         |
+| JavaScript | Client-side functionality |
 
 ---
 
@@ -68,8 +79,8 @@ Complaint-Management-System/
 ├── complaint_system/
 │   ├── settings.py
 │   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
+│   ├── wsgi.py
+│   └── asgi.py
 │
 ├── complaints/
 │   ├── migrations/
@@ -90,37 +101,36 @@ Complaint-Management-System/
 
 ---
 
-## Installation Guide
+## Installation
 
-### 1. Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/your-username/Complaint-Management-System.git
-
 cd Complaint-Management-System
 ```
 
-### 2. Create a Virtual Environment
+### Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-#### Activate Virtual Environment
+### Activate Environment
 
-**Windows**
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-**Linux / macOS**
+Linux/macOS:
 
 ```bash
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -130,7 +140,7 @@ pip install -r requirements.txt
 
 ## Database Configuration
 
-Update the database settings inside `settings.py`.
+Update `settings.py`:
 
 ```python
 DATABASES = {
@@ -147,7 +157,7 @@ DATABASES = {
 
 ---
 
-## Apply Migrations
+## Migrations
 
 ```bash
 python manage.py makemigrations
@@ -164,15 +174,15 @@ python manage.py createsuperuser
 
 ---
 
-## Run the Application
+## Run Project
 
 ```bash
 python manage.py runserver
 ```
 
-Open your browser and visit:
+Open in browser:
 
-```text
+```
 http://127.0.0.1:8000/
 ```
 
@@ -180,69 +190,59 @@ http://127.0.0.1:8000/
 
 ## Screenshots
 
-### Register Page
-![Register](Screenshots/register.png)
+* Register Page
+* Login Page
+* About Page
+* User Profile
+* Complaint Dashboard
+* View Complaints
+* Update Complaint
 
-### Login Page
-![Login](Screenshots/login.png)
-
-### About Page
-![About](Screenshots/about_us.png)
-
-### User Profile
-![Profile](Screenshots/profilepage.png)
-
-### Complaint Dashboard
-![Dashboard](Screenshots/complaints_dashboard.png)
-
-### View Complaints
-![View Complaints](Screenshots/viewcomplaint.png)
-
-### Update Complaint
-![Update Complaint](Screenshots/updatepage.png)
+(Stored inside `/Screenshots` folder)
 
 ---
 
 ## Security Features
 
-- Password Hashing
-- CSRF Protection
-- Secure Authentication
-- Session Management
-- Django Built-in Security Features
+* Password hashing
+* CSRF protection
+* Secure authentication system
+* Session management
+* Django security middleware
 
 ---
 
-## Key Highlights
+## Key Features
 
-- Role-Based Access Control
-- Complaint Lifecycle Management
-- Complaint Status Tracking
-- Responsive User Interface
-- Secure Data Handling
-- Admin Monitoring Dashboard
+* Role-based access control
+* Complaint lifecycle management
+* Status tracking system
+* Admin control dashboard
+* Responsive UI design
+* Secure data handling
 
 ---
 
 ## Future Enhancements
 
-- Email Notifications
-- SMS Notifications
-- Analytics Dashboard
-- AI-Based Complaint Classification
-- Complaint Priority Levels
-- Complaint Assignment System
-- Report Generation
+* Email notifications
+* SMS notifications
+* Analytics dashboard
+* AI-based complaint classification
+* Priority-based complaints
+* Assignment system
+* PDF report generation
+* Activity logs
 
 ---
 
 ## Author
 
-**Harshali Kulkarni**  
+Harshali Kulkarni
 MCA Student | Python Developer | Django Developer
 
 ---
 
 ## License
 
-This project is developed for educational and learning purposes.
+This project is created for educational and learning purposes.
