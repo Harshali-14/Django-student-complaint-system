@@ -1,49 +1,52 @@
-# 📝 Complaint Management System
+# Complaint Management System
 
-A web-based **Complaint Management System** developed using **Django** and **MySQL** that helps users submit, manage, and track complaints efficiently through a secure and user-friendly platform.
+A web-based **Complaint Management System** developed using **Django** and **MySQL** that enables users to submit, manage, and track complaints efficiently through a secure and user-friendly platform.
 
-The system provides role-based access for users and administrators, enabling smooth complaint handling and status monitoring.
+The system provides role-based access for users and administrators, ensuring smooth complaint handling, status monitoring, and effective resolution management.
 
 ---
 
-# 🚀 Features
+## Features
 
-## 🔐 User Authentication
+### User Authentication
 - User Registration
 - User Login & Logout
 - Secure Authentication System
 - Profile Management
 
-## 📝 Complaint Management
-- Submit Complaints
+### Complaint Management
+- Submit New Complaints
 - View Complaint Details
 - Update Complaint Information
 - Delete Complaints
+- Manage Complaint Records
 
-## 🔄 Complaint Status Tracking
+### Complaint Status Tracking
 - Pending Status
 - In Progress Status
 - Resolved Status
+- Real-Time Status Updates
 
-## 🧑‍💼 Admin Dashboard
+### Admin Dashboard
 - Manage User Complaints
 - Update Complaint Status
 - Monitor Complaint Activities
+- View Complaint Statistics
 - Complaint Overview Dashboard
 
-## 🔍 Search & Filter
-- Search Complaints
-- Filter by Status
-- Quick Complaint Access
+### Search and Filtering
+- Search Complaints by Keywords
+- Filter Complaints by Status
+- Quick Access to Complaint Records
 
-## 🎨 Responsive User Interface
-- Clean User Interface
-- Mobile Friendly Design
-- Responsive Layout
+### Responsive User Interface
+- Clean and Modern Design
+- Mobile-Friendly Layout
+- Responsive Across Devices
 
 ---
 
-# 🛠️ Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 |------------|----------|
@@ -52,12 +55,12 @@ The system provides role-based access for users and administrators, enabling smo
 | MySQL | Database Management |
 | HTML5 | Frontend Structure |
 | CSS3 | Styling |
-| JavaScript | Client-side Functionality |
-| Bootstrap | Responsive UI |
+| Bootstrap | Responsive Design |
+| JavaScript | Client-Side Functionality |
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```bash
 Complaint-Management-System/
@@ -87,43 +90,37 @@ Complaint-Management-System/
 
 ---
 
-# ⚙️ Installation Guide
+## Installation Guide
 
-## 1️⃣ Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/Complaint-Management-System.git
+
+cd Complaint-Management-System
 ```
 
-```bash
-cd complaintsystem
-```
-
----
-
-## 2️⃣ Create Virtual Environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate Virtual Environment
+#### Activate Virtual Environment
 
-### Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux / Mac
+**Linux / macOS**
 
 ```bash
 source venv/bin/activate
 ```
 
----
-
-## 3️⃣ Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -131,9 +128,9 @@ pip install -r requirements.txt
 
 ---
 
-# 🔐 Configure Database
+## Database Configuration
 
-Update your `settings.py` file:
+Update the database settings inside `settings.py`.
 
 ```python
 DATABASES = {
@@ -150,19 +147,16 @@ DATABASES = {
 
 ---
 
-# 🗃️ Apply Database Migrations
+## Apply Migrations
 
 ```bash
 python manage.py makemigrations
-```
-
-```bash
 python manage.py migrate
 ```
 
 ---
 
-# 👤 Create Superuser
+## Create Superuser
 
 ```bash
 python manage.py createsuperuser
@@ -170,79 +164,85 @@ python manage.py createsuperuser
 
 ---
 
-# ▶️ Run Development Server
+## Run the Application
 
 ```bash
 python manage.py runserver
 ```
 
-Open browser:
+Open your browser and visit:
 
-```bash
+```text
 http://127.0.0.1:8000/
 ```
 
 ---
 
-# 📸 Screenshots
+## Screenshots
 
-## 📝 Register Page
+### Register Page
 ![Register](Screenshots/register.png)
 
-## 🔐 Login Page
+### Login Page
 ![Login](Screenshots/login.png)
 
-## ℹ️ About Page
+### About Page
 ![About](Screenshots/about_us.png)
 
-## 👤 User Profile
+### User Profile
 ![Profile](Screenshots/profilepage.png)
 
-## 📋 View Complaints
-![View Complaints](Screenshots/viewcomplaint.png)
-
-## 📊 Complaint Dashboard
+### Complaint Dashboard
 ![Dashboard](Screenshots/complaints_dashboard.png)
 
-## ✏️ Update Complaint Page
-![Update](Screenshots/updatepage.png)
+### View Complaints
+![View Complaints](Screenshots/viewcomplaint.png)
 
-
-## ⚙️ Setup
-
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-
+### Update Complaint
+![Update Complaint](Screenshots/updatepage.png)
 
 ---
 
-## 🔐 Security
+## Security Features
 
-* Password Hashing
-* CSRF Protection
-* Secure Authentication
-
----
-
-## 📊 Key Highlights
-
-* Role-Based Access (User/Admin)
-* Clean UI & Responsive Design
-* Efficient Complaint Workflow
+- Password Hashing
+- CSRF Protection
+- Secure Authentication
+- Session Management
+- Django Built-in Security Features
 
 ---
 
-## 📌 Future Scope
+## Key Highlights
 
-* Email Notifications
-* Analytics Dashboard
-* AI-based Complaint Classification
+- Role-Based Access Control
+- Complaint Lifecycle Management
+- Complaint Status Tracking
+- Responsive User Interface
+- Secure Data Handling
+- Admin Monitoring Dashboard
 
 ---
 
-## 👩‍💻 Author
+## Future Enhancements
 
-Harshali Kulkarni
+- Email Notifications
+- SMS Notifications
+- Analytics Dashboard
+- AI-Based Complaint Classification
+- Complaint Priority Levels
+- Complaint Assignment System
+- Report Generation
 
+---
 
+## Author
+
+**Harshali Kulkarni**  
+MCA Student | Python Developer | Django Developer
+
+---
+
+## License
+
+This project is developed for educational and learning purposes.
