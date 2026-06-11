@@ -1,9 +1,9 @@
 from django.apps import AppConfig
+from django.contrib.auth.models import User
 
 
 class ComplaintConfig(AppConfig):
     name = 'complaint'
-from django.contrib.auth.models import User
 
 def create_admin():
     if not User.objects.filter(username="admin").exists():
