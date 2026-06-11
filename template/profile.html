@@ -137,6 +137,122 @@ button {
     from {opacity: 0; transform: translateY(15px);}
     to {opacity: 1; transform: translateY(0);}
 }
+.profile-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.avatar{
+    width:100px;
+    height:100px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6
+    );
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    font-weight:700;
+    color:white;
+    margin-bottom:15px;
+    box-shadow:0 10px 30px rgba(59,130,246,.3);
+}
+
+.profile-header h1{
+    margin-bottom:8px;
+}
+
+.profile-header p{
+    color:#94a3b8;
+}
+.card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    margin-top:6px;
+    background:#1e293b;
+    color:white;
+    font-size:14px;
+}
+
+input:focus{
+    outline:none;
+    box-shadow:0 0 0 2px #3b82f6;
+}
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#3b82f6;
+    color:white;
+}
+
+.btn-success{
+    background:#22c55e;
+    color:white;
+}
+
+.btn-danger{
+    background:#ef4444;
+    color:white;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:linear-gradient(
+        135deg,
+        rgba(59,130,246,.25),
+        rgba(139,92,246,.25)
+    );
+    border-radius:50%;
+    top:-200px;
+    right:-100px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:rgba(34,197,94,.15);
+    border-radius:50%;
+    bottom:-150px;
+    left:-100px;
+    filter:blur(120px);
+    z-index:-1;
+}
 </style>
 </head>
 
@@ -162,12 +278,23 @@ button {
 {% endif %}
 
 <div class="container">
+<div class="profile-header">
+
+    <div class="avatar">
+        {{ user.username|first|upper }}
+    </div>
+
+    <h1>{{ user.username }}</h1>
+
+    <p>{{ user.email }}</p>
+
+</div>
 
 <div class="grid">
 
 <!-- PROFILE CARD -->
 <div class="card disabled" id="profileCard">
-    <h2>👤 Profile</h2>
+    <h2> Profile</h2>
 
     <form method="POST">
         {% csrf_token %}
@@ -189,7 +316,7 @@ button {
 
 <!-- PASSWORD CARD -->
 <div class="card">
-    <h2>🔐 Change Password</h2>
+    <h2> Change Password</h2>
 
     <form method="POST" action="{% url 'change_password' %}">
         {% csrf_token %}
@@ -201,7 +328,7 @@ button {
 
         <div class="form-group">
             <label>New Password</label>
-            <input type="password" name="new_password" required>
+<input type="password" id="newPass" name="new_password" required>
         </div>
 
         <div class="form-group">
