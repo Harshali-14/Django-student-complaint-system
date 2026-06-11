@@ -10,16 +10,7 @@ import json
 from .models import Feedback
 from django.contrib.auth import update_session_auth_hash
 
-from django.contrib.auth.models import User
 
-def create_admin():
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser(
-            username="admin",
-            email="admin@gmail.com",
-            password="harshu14"
-        )
-create_admin()
 def register(request):
     if request.method == "POST":
         uname = request.POST.get("username")
@@ -80,7 +71,6 @@ def signin(request):
 
 @login_required
 def complaintreg(request):
-    create_admin()
 
     # 🔥 Department → Classes Mapping
     dept_classes = {
