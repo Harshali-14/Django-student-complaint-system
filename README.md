@@ -106,8 +106,8 @@ Complaint-Management-System/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Complaint-Management-System.git
-cd Complaint-Management-System
+git clone https://github.com/your-username/Django-Student-Complaint-System.git
+cd Django-Student-Complaint-System
 ```
 
 ### Create Virtual Environment
