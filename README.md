@@ -106,7 +106,7 @@ Complaint-Management-System/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Django-Student-Complaint-System.git
+git clone https://github.com/Harshali-14/Django-Student-Complaint-System.git
 cd Django-Student-Complaint-System
 ```
 
